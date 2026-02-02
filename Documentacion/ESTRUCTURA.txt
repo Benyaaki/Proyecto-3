@@ -1,0 +1,74 @@
+Estructura del Proyecto
+=======================
+
+Aca esta como organice los archivos del proyecto:
+
+
+Proyecto Modulo 3/
+│
+├── Documentacion/
+│   ├── README.txt          Info general y como usar
+│   └── ESTRUCTURA.txt      Este archivo
+│
+├── main.py                 Para correr la version terminal
+├── app.py                  Servidor Flask (version web)
+├── requirements.txt        Dependencias
+├── .gitignore
+│
+├── modulos/                Aca esta toda la logica
+│   ├── __init__.py
+│   ├── datos_basicos.py    Captura de datos
+│   ├── validaciones.py     Validaciones
+│   ├── gestion_datos.py    CRUD de productos
+│   ├── funciones_utiles.py Estadisticas y extras
+│   └── menu.py             Menu de la terminal
+│
+└── static/                 Frontend de la web
+    ├── index.html
+    ├── css/
+    │   └── style.css
+    └── js/
+        └── app.js
+
+
+Archivos principales
+--------------------
+
+main.py
+  Punto de entrada de la version terminal
+
+app.py
+  Servidor Flask con la API REST
+
+modulos/
+  __init__.py
+  datos_basicos.py
+  validaciones.py
+  gestion_datos.py
+  funciones_utiles.py
+  menu.py
+
+static/
+  index.html
+  css/style.css
+  js/app.js
+
+
+Resumen
+-------
+
+Total de archivos Python: 7
+Total de archivos web: 3
+Total de archivos de config: 2
+Total de documentacion: 2
+
+
+Dependencias
+------------
+
+Para Python:
+- Flask 3.1.2
+- Flask-CORS 4.0.0
+
+Para el frontend:
+- Nada, use HTML/CSS/JS puro
